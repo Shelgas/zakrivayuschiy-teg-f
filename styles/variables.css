@@ -10,4 +10,5 @@
                         linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
     --color-heart: red;
     --card-width: clamp(375px, 50%, 700px);
+    --button-text-color: #fff;
 }
