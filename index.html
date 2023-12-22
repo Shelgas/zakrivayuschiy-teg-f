@@ -5,9 +5,9 @@
     <meta name="color-scheme" content="light dark" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
-    <link rel="icon" href="./svg/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./svg/icon.svg" type="image/svg+xml"/>
-    <link rel="apple-touch-icon" href="./images/apple-touch-favicon.png">
+    <link rel="icon" href="./svg/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./svg/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/apple-touch-favicon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -24,7 +24,11 @@
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
-            <button type="button" data-theme="dark" class="theme-menu__button">
+            <button
+              type="button"
+              data-theme="dark"
+              class="theme-menu__button button"
+            >
               Темно
             </button>
           </li>
@@ -33,20 +37,54 @@
               type="button"
               data-theme="auto"
               disabled
-              class="theme-menu__button"
+              class="theme-menu__button button"
             >
               Авто
             </button>
           </li>
           <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button">
+            <button
+              type="button"
+              data-theme="light"
+              class="theme-menu__button button"
+            >
               Светло
             </button>
           </li>
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main class="main">
+      <article class="card content">
+        <h3 class="card__title">
+          Фритрек и нулевой спринт: Подготовка к работе
+        </h3>
+        <div class="card__image-wrapper">
+          <img
+            src="./images/normal.jpg"
+            alt="обычная машина"
+            class="card__image"
+          />
+          <span class="card__image-lable">&lt;/HTML&gt;</span>
+          <p class="card__text">
+            Это было самое начало пути. На этом этапе важно было проникнуться
+            основами и настроиться на учёбу. И, возможно, подумать, как новые
+            знания могут повлиять на ваше будущее.
+          </p>
+          <p class="card__text">
+            Место для ваших воспоминаний о начале обучения.
+          </p>
+          <div class="card__controls">
+            <button class="card__icon-button">
+              <img src="./svg/heart.svg" alt="" />
+            </button>
+            <button class="card__like-button button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </div>
+      </article>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

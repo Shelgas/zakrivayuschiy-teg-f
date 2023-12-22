@@ -20,6 +20,7 @@
   background-color: var( --background-color);
   background-image: var(--background-image);
   background-size: cover;
+  font-family: var(--font-family);
   font-variation-settings: 'wght' var(--font-weight);
   color: var(--color);
 }
@@ -31,13 +32,21 @@
   border: 2px solid var(--color);
 }
 
+.button {
+  background: transparent;
+  cursor: pointer;
+  appearance: none;
+  font-size: 14px;
+  font-family: var(--font-family-accent);
+}
+
 .header {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   padding-block: 136px 22px;
-  margin-block: 100px 104px;
+  margin-block: 100px 100px;
   text-transform: uppercase;
   font-family: var(--font-family-accent);
   gap: 20px;
@@ -66,11 +75,7 @@
   position: relative;
   padding: 0;
   border: none;
-  font-size: 14px;
   text-transform: uppercase;
-  background: transparent;
-  cursor: pointer;
-  appearance: none;
 }
 
 .theme-menu__button::after {
@@ -107,6 +112,77 @@
 .theme-menu__button:disabled::before {
   content: '▶';
   position: absolute;
-  left: -21px;
+  inset-inline-start: -21px;
   animation: arrow 0.5s infinite alternate ease-in-out;
 } 
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+}
+
+.card__title {
+  font-size: 18px;
+  padding: 5px 10px;
+  font-variation-settings: 'wght' var(--font-weight-title);
+}
+
+.card__image-wrapper {
+  position: relative;
+}
+
+.card__image {
+  border-bottom: 2px solid var(--color);
+  border-top: 2px solid var(--color);
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  inline-size: 100%;
+}
+
+.card__image-lable {
+  position: absolute;
+  z-index: 1;
+  inset-inline-end: 13px;
+  inset-block-start: 24px;
+  opacity: 0.5;
+  font-family: var(--font-family-accent);
+  text-transform: uppercase;
+  text-shadow: 0 0 1px var(--background-color, #ffffff);
+  mix-blend-mode: hard-light;
+}
+
+@supports (
+  (-webkit-text-stroke: 1px var(--background-color)) or
+    (text-stroke: 1px var(--background-color))
+) {
+  .card__image-lable {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--background-color);
+    text-stroke: 1px var(--background-color);
+  }
+}
+
+.card__text {
+  padding-block-start: 27px;
+  padding-inline: 25px;
+  font-size: 18px;
+  line-height: 116.667%;
+}
+
+.card__controls {
+  display: flex;
+  padding: 25px;
+  justify-content: end;
+  gap: 12px;
+}
+
+.card__like-button {
+  position: relative;
+  z-index: 1;
+  border: 2px solid var(--color);
+  line-height: 90%;
+  block-size: 38px;
+  inline-size: 130px;
+}
