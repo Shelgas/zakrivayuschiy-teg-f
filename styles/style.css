@@ -16,7 +16,6 @@
 
 .page {
   min-inline-size: 320px;
-  min-block-size: 100dvb;
   background-color: var(--background-color);
   background-image: var(--background-image);
   background-size: cover;
@@ -48,7 +47,7 @@
   justify-content: flex-end;
   align-items: center;
   padding-block: 136px 22px;
-  margin-block: 100px 100px;
+  margin-block: 100px;
   text-transform: uppercase;
   font-family: var(--font-family-accent);
   gap: 20px;
@@ -354,7 +353,7 @@
 .modal__content {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 20px;
 }
 
 .modal__icon {
