@@ -389,7 +389,7 @@
 }
 
 .filter-sepia {
-  filter: sepia(80%);
+  filter: sepia(80%) grayscale(10%);
 }
 
 .filter-invert {
