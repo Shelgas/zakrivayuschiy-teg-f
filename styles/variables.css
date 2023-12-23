@@ -1,14 +1,18 @@
 :root {
-    --font-family: 'Inter', sans-serif;
-    --font-family-accent: 'PressStart2P', fantasy;
-    --font-weight: 400;
-    --font-weight-title: 700;
-    --color: #000;
-    --background-color: #fff;
-    --background-image: repeating-linear-gradient(to left, #d3d3d3 0 2px, #d3d3d300 2px 4px),
-                        repeating-linear-gradient(to bottom, #d3d3d3 0 2px, #d3d3d300 2px 4px),
-                        linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
-    --color-heart: red;
-    --card-width: clamp(375px, 50%, 700px);
-    --button-text-color: #fff;
+  --font-family: "Inter", sans-serif;
+  --font-family-accent: "PressStart2P", fantasy;
+  --font-weight: 400;
+  --font-weight-title: 700;
+  --color: #000;
+  --background-color: #fff;
+  --background-image: repeating-linear-gradient(
+      to left,
+      #d3d3d3 0 2px,
+      #d3d3d300 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, #d3d3d300 2px 4px),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+  --color-heart: red;
+  --card-width: 696px;
+  --button-text-color: #fff;
 }
