@@ -25,7 +25,7 @@
   --button-text-color: #00cc14;
   --background-image: repeating-linear-gradient(
       to left,
-      #000 2px,
+      #000 0 2px,
       transparent 2px 4px
     ),
     repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
@@ -43,7 +43,7 @@
     --button-text-color: #00cc14;
     --background-image: repeating-linear-gradient(
         to left,
-        #000 2px,
+        #000 0 2px,
         transparent 2px 4px
       ),
       repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),

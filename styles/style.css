@@ -91,6 +91,7 @@
 }
 
 .theme-menu__button:hover {
+  opacity: 0.6;
   transition: opacity 0.3s ease;
 }
 
@@ -144,7 +145,7 @@
 .card__image-lable {
   position: absolute;
   z-index: 1;
-  inset-inline-end: 13px;
+  inset-inline-end: 22px;
   inset-block-start: 24px;
   opacity: 0.5;
   font-family: var(--font-family-accent);
@@ -221,12 +222,12 @@
 }
 
 .like-icon:hover .main-body {
-  fill: #000000;
+  fill: var(--color, #000000);
   transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon:hover .core {
-  fill: #000000;
+  fill: var(--color, #000000);
   transition: fill 0.3s linear;
 }
 
@@ -309,7 +310,7 @@
 }
 
 .footer {
-  padding-block: 54px;
+  padding-block: 50px 102px;
 }
 
 .button--save {
@@ -329,8 +330,8 @@
 }
 
 .modal {
-  max-inline-size: 355px;
-  padding: 25px 30px;
+  max-inline-size: 357px;
+  padding: 30px;
   border: 2px solid var(--color);
   background: var(--background-color);
   color: var(--color);
@@ -354,6 +355,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  font-size: 14px;
 }
 
 .modal__icon {
@@ -400,6 +402,15 @@
 }
 
 @media (width < 400px) {
+  .header {
+    padding-block-start: 120px;
+  }
+
+  .card__image-lable {
+    inset-inline-end: 12px;
+    inset-block-start: 22px;
+  }
+
   .modal {
     padding: 30px 40px;
     max-inline-size: 340px;
